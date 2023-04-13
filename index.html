@@ -9,24 +9,30 @@
     <meta name="robots" content="index">
     <meta name="robots" content="follow">
     <title>encriptador</title>
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="/public/css/normalize.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="logo.png">
+    <header class="home__page">
+        <nav class="nav container">
+            <img src="/public/img/Logo.png" alt="">
         </nav>
     </header>
-    <section class="stay">
-        <article class="inputText">
-            <input type="text" placeholder="ingresa texto aquí">
-            <button class="encrypt">encriptar</button>
-            <button class="decrypt">desencriptar</button>
+    <main class="main__page container">
+        <article class="entrada">
+            <textarea class="inputText" name="entrada" id="" cols="30" rows="10" placeholder="ingresa texto aquí."></textarea>
+            <div class="botones">
+                <button class="encrypt">encriptar</button>
+                <button class="decrypt">desencriptar</button>
+            </div>
         </article>
-        <article class="outputText">
+        <article class="salida">
+            <p>Ningun mensaje fue encontrado</p>
             <button class="copyText">copiar</button>
         </article>
-    </section>
-    <footer>
+    </main>
+    <main class="container">
+    <footer class="pieDePagina">
         <section class="pie">
             <img src="logo.png">
             <ul class="contactSocialNetwork">

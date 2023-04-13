@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+:root{
+    --color-cielo: #F3F5FC;
+    --color-azul:#0A3871;
+    --color-azulClaro:#D8DFE8;
+    --color-blanco:#ffffff;
+    --padding-container:40px 0;
+}
+body{
+    background-color: var(--color-cielo);
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+.home__page{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    background-color: var(--color-azulClaro);
+}
+nav{
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+    --padding-container: 0;
+}
+header nav img{
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+}
+.main__page {
+    display: flex;
+    justify-content: space-evenly;
+    height: 550px;
+}
+.entrada{
+    margin: 10px;
+}
+.encrypt, .decrypt{
+    padding: 7px 10px;
+    border-radius: 15px;
+    color: var(--color-blanco);
+    background-color: var(--color-azul);
+    display: inline-block;
+}
+.inputText{
+    width: 70vw;
+    max-width: 900px;
+    min-width: 400px;
+}
+
+
+.pieDePagina{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    background-color: var(--color-azul);
+    --padding-container: 0;
+
+}
+/*----------------------------------------------*/
+@media screen and (max-width: 767px) {
+.main__page {
+    flex-direction: column;
+    align-items: center;
+}
+.entrada {
+    margin-top: 20px;
+    }
+}
