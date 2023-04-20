@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,29 +19,42 @@
         </nav>
     </header>
     <main class="main__page container">
-        <article class="entrada">
-            <textarea class="inputText" name="entrada" id="" cols="30" rows="10" placeholder="ingresa texto aquí."></textarea>
-            <div class="botones">
-                <button class="encrypt">encriptar</button>
-                <button class="decrypt">desencriptar</button>
-            </div>
+        <article class="first__field">
+            <textarea class="incoming__text" name="entrada" id="" cols="30" rows="10" placeholder="ingresa texto aquí..."></textarea>
+            <button class="buttons encrypt">encriptar</button>
+            <button class="buttons decrypt">desencriptar</button>
         </article>
-        <article class="salida">
+        <article class="seconds__field">
             <p>Ningun mensaje fue encontrado</p>
-            <button class="copyText">copiar</button>
+            <button class="buttons copyText">copiar</button>
         </article>
     </main>
-    <main class="container">
-    <footer class="pieDePagina">
-        <section class="pie">
-            <img src="logo.png">
-            <ul class="contactSocialNetwork">
-                <li><img src="linkendIn.png"></li>
-                <li><img src="gitHub.png"></li>
-            </ul></section>
+    <footer>
+        <section class="foot__page">
             <article>
-                <p>Laura Rendon</p>
+                <p>Desarrollado por:</p>
             </article>
+            <img class="foot__logo" src="/public/img/marcaLogo.png">
+            <article class="foot__socialNetworks">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/laura-rendon-mesa/" target="_blank"><img src="/public/img/linkedin.png" alt="linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lauramesa" target="_blank"><img src="/public/img/github.png" alt="github"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/public/img/correo.png" alt="correo"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/public/img/portafolio.png" alt="portafolio"></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="foot__author">
+            <p>&copy; 2023 Todos los derechos reservados. El contenido de este sitio web, incluyendo texto, gráficos, imágenes y otros materiales, está protegido por las leyes de derechos de autor y no puede ser utilizado sin el consentimiento previo por escrito del propietario del sitio.</p>
+        </section>
     </footer>
 </body>
 </html>

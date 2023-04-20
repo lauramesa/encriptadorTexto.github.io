@@ -38,34 +38,79 @@ header nav img{
 .main__page {
     display: flex;
     justify-content: space-evenly;
-    height: 550px;
+    height: 100%;
 }
-.entrada{
+.first__field{
     margin: 10px;
 }
-.encrypt, .decrypt{
+.seconds__field{
+    width: 100%;
+    height: 500px;
+    background-color: var(--color-blanco);
+    color: var(--color-azul);
+    padding: 1em;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height:  1.4;
+}
+.buttons{
+    margin: 10px 0;
     padding: 7px 10px;
     border-radius: 15px;
     color: var(--color-blanco);
     background-color: var(--color-azul);
     display: inline-block;
 }
-.inputText{
-    width: 70vw;
-    max-width: 900px;
+.incoming__text{
+    color: var(--color-azul);
+    background-color: var(--color-cielo);
+    width: 65vw;
+    height: 95%;
+    max-width: 850px;
     min-width: 400px;
+    padding: 1em;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height:  1.4;
 }
-
-
-.pieDePagina{
+footer{
     width: 100%;
+    padding-top: 30px;
     height: auto;
     position: relative;
     display: flex;
     background-color: var(--color-azul);
     --padding-container: 0;
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-blanco);
 }
+.foot__logo{
+    width: 200px;
+}
+.foot__author{
+    padding: 10px;
+    width: 60%;
+}
+.foot__socialNetworks img{
+    width: 35px;
+}
+.foot__socialNetworks ul li{
+    margin: 10px;
+    border: 2px solid ;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 /*----------------------------------------------*/
 @media screen and (max-width: 767px) {
 .main__page {
@@ -74,5 +119,18 @@ header nav img{
 }
 .entrada {
     margin-top: 20px;
-    }
+}
+.first__field{
+    width: 100%;
+}
+.seconds__field{
+    width: 100%;
+    height: 200px;
+}
+.incoming__text{
+    width: 100%;
+}
+.foot__author{
+    width: 80%;
+}
 }
