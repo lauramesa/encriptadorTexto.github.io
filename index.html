@@ -21,11 +21,11 @@
     <main class="main__page container">
         <article class="first__field">
             <textarea class="incoming__text" name="entrada" id="" cols="30" rows="10" placeholder="ingresa texto aquí..."></textarea>
-            <button class="buttons encrypt">encriptar</button>
+            <button class="buttons encrypt" onclick="mostrar()">encriptar</button>
             <button class="buttons decrypt">desencriptar</button>
         </article>
         <article class="seconds__field">
-            <p>Ningun mensaje fue encontrado</p>
+            <p class="textResult">Ningun mensaje fue encontrado</p>
             <button class="buttons copyText">copiar</button>
         </article>
     </main>
@@ -56,5 +56,8 @@
             <p>&copy; 2023 Todos los derechos reservados. El contenido de este sitio web, incluyendo texto, gráficos, imágenes y otros materiales, está protegido por las leyes de derechos de autor y no puede ser utilizado sin el consentimiento previo por escrito del propietario del sitio.</p>
         </section>
     </footer>
+
+    <script src="/public/script/index.js"></script>
+    <script src="/public/script/encriptar.js"></script>
 </body>
 </html>
