@@ -31,12 +31,9 @@ nav{
     --padding-container: 0;
 }
 header nav img{
-    width: auto;
-    height: 60px;
-    margin: 3px;
-}
-.img__alura{
-    float: right;
+    width: 55px;
+    height: 55px;
+    margin: 5px;
 }
 .main__page {
     display: flex;
@@ -98,7 +95,7 @@ footer{
     color: var(--color-blanco);
 }
 .foot__logo{
-    width: 170px;
+    width: 200px;
 }
 .foot__author{
     padding: 10px;
