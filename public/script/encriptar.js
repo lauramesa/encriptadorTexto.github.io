@@ -1,24 +1,42 @@
+function mostrar(){
+    var texto = document.querySelector('.incoming__text').value;
+
+    if(validarTexto(texto) == true){
+        return mostrarMensaje("No has ingresado ningun texto!");
+    }else if(validarCaracteresEspeciales(texto) == true){
+        return mostrarMensaje("No se permiten caracteres especiales tales como las tildes");
+    }else if(validarMayusculas(texto) == true){
+        return mostrarMensaje("No se permiten letras en mayuscula");
+    }
+    else{
+        encriptar(texto);
+    }
+}
+
 function validarTexto(textoEntrada){
     let hayTexto = textoEntrada;
-    if(hayTexto.trim() == ""){
-        return false;
-    } else{
+    if(hayTexto.trim() === ""){
         return true;
+    } else{
+        return false;
     }
 }
 
 function validarCaracteresEspeciales(textoEntrada){
-    const caracteres = /[áíúéóäïüëöàìùèòñ]/g;
-    if(textoEntrada.match(caracteres)){
-        return false;
-    } else{
+    let text  = textoEntrada;
+    let caracteres = /[áíúéóäïüëöàìùèòñ]/g;
+    let hayCaracter = text.match(caracteres);
+    if(hayCaracter){
         return true;
+    }else{
+        return false;
     }
 }
 
 function validarMayusculas(textoEntrada){
-    if(textoEntrada != textoEntrada.toLowerCase()){
-        mostrarMensaje("no se permiten letras mayusculas");
+    let hayMayusculas = textoEntrada;
+    if(hayMayusculas != hayMayusculas.toLowerCase()){
+        return true;
     }
 }
 
@@ -45,16 +63,7 @@ function encriptar(textoEntrada){
 }
 
 function mostrarMensaje(mensaje){
-    const resultado = document.querySelector('.textResult');
+    let resultado = document.querySelector('.textResult');
     var x = mensaje;
     return resultado.textContent = x;
-}
-
-function mostrar(){
-    var textoEntrada = document.querySelector('.incoming__text').value;
-
-    validarTexto(textoEntrada);
-    validarCaracteresEspeciales(textoEntrada);
-    validarMayusculas(textoEntrada);
-    encriptar(textoEntrada);
 }
