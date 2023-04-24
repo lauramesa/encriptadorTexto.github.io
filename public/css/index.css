@@ -44,6 +44,7 @@ header nav img{
     margin: 10px;
 }
 .seconds__field{
+    position: relative;
     width: 100%;
     height: 500px;
     background-color: var(--color-blanco);
@@ -59,7 +60,8 @@ header nav img{
 .buttons{
     margin: 10px 0;
     padding: 7px 10px;
-    border-radius: 15px;
+    border-radius: 10px;
+    font-size: 20px;
     color: var(--color-blanco);
     background-color: var(--color-azul);
     display: inline-block;
@@ -78,6 +80,10 @@ header nav img{
     font-weight: 500;
     font-size: 20px;
     line-height:  1.4;
+}
+.copyText{
+    position: absolute;
+    bottom: 0;
 }
 footer{
     width: 100%;
@@ -116,6 +122,11 @@ footer{
 .main__page {
     flex-direction: column;
     align-items: center;
+}
+header nav img{
+    width: auto;
+    height: 40px;
+    margin: 3px;
 }
 .entrada {
     margin-top: 20px;
