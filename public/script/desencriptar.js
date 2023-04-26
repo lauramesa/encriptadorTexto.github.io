@@ -24,7 +24,7 @@ function validarTexto(textoEntrada){
 
 function validarCaracteresEspeciales(textoEntrada){
     let text  = textoEntrada;
-    let caracteres = /[áíúéóäïüëöàìùèòñ]/g;
+    let caracteres = /[áàâäãåąæāªèéëėęēïíìīîįüúūùûôöòóºōœõøñ]/g;
     let hayCaracter = text.match(caracteres);
     if(hayCaracter){
         return true;
