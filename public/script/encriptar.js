@@ -1,4 +1,4 @@
-function mostrar(){
+function encriptar(){
     var texto = document.querySelector('.incoming__text').value;
 
     if(validarTexto(texto) == true){
@@ -8,8 +8,8 @@ function mostrar(){
     }else if(validarMayusculas(texto) == true){
         return mostrarMensaje("No se permiten letras en mayuscula");
     }
-    else{boo
-        encriptar(texto);
+    else{
+        generarEncriptacion(texto);
     }
 }
 
@@ -40,7 +40,7 @@ function validarMayusculas(textoEntrada){
     }
 }
 
-function encriptar(textoEntrada){
+function generarEncriptacion(textoEntrada){
     var entrada = textoEntrada;
     var reemplazoVocales = "";
 

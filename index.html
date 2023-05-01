@@ -8,25 +8,26 @@
     <meta name="author" content="laura rendon">
     <meta name="robots" content="index">
     <meta name="robots" content="follow">
-    <title>encriptador</title>
+    <link rel="icon" href="/public/img/logo.ico">
     <link rel="stylesheet" href="/public/css/index.css">
     <link rel="stylesheet" href="/public/css/normalize.css">
+    <title>Encriptador</title>
 </head>
 <body>
     <header class="home__page">
         <nav class="nav container">
-            <img src="/public/img/logoChallege.png" alt="">
+            <img src="/public/img/logoChallege.png" alt="logo">
         </nav>
     </header>
     <main class="main__page container">
         <article class="first__field">
             <textarea class="incoming__text" name="entrada" id="" cols="30" rows="10" placeholder="ingresa texto aquí..."></textarea>
-            <button class="buttons encrypt" onclick="">encriptar</button>
+            <button class="buttons encrypt" onclick="encriptar()">encriptar</button>
             <button class="buttons decrypt" onclick="descifrar()">desencriptar</button>
         </article>
         <article class="seconds__field">
             <p class="textResult">Ningun mensaje fue encontrado</p>
-            <button class="buttons copyText">copiar</button>
+            <button class="buttons copyText" onclick="copiarTexto()">copiar</button>
         </article>
     </main>
     <footer>

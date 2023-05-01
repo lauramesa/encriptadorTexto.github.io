@@ -31,7 +31,7 @@ nav{
     --padding-container: 0;
 }
 header nav img{
-    width: 55px;
+    width: auto;
     height: 55px;
     margin: 5px;
 }
