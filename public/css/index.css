@@ -20,9 +20,10 @@ body{
 .home__page{
     width: 100%;
     height: auto;
-    position: relative;
+    position: fixed;
     display: flex;
     background-color: var(--color-azulClaro);
+    z-index: 2;
 }
 nav{
     width: 100%;
@@ -40,13 +41,16 @@ header nav img{
     justify-content: space-evenly;
     height: 100%;
 }
-.first__field{
-    margin: 10px;
+.first__field, .seconds__field{
+    margin-top: 50px;
+    margin-bottom: 15x;
+    height: 520px;
 }
 .seconds__field{
+    z-index: 1;
     position: relative;
     width: 100%;
-    height: 500px;
+    min-width: 300px;
     background-color: var(--color-blanco);
     color: var(--color-azul);
     padding: 1em;
@@ -57,14 +61,39 @@ header nav img{
     font-size: 20px;
     line-height:  1.4;
 }
+
+.textResult{
+    margin: 5px;
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+.textResult::selection{
+    color: var(--color-blanco);
+    background-color: var(--color-azul);
+}
+.incoming__text::selection{
+    color: var(--color-blanco);
+    background-color: var(--color-azul);
+}
 .buttons{
-    margin: 10px 0;
+    margin: 10px 10px;
     padding: 7px 10px;
+    border: 1px;
     border-radius: 10px;
     font-size: 20px;
+    cursor: pointer;
     color: var(--color-blanco);
     background-color: var(--color-azul);
     display: inline-block;
+}
+.buttons:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: #2862a9;
+
 }
 .incoming__text{
     color: var(--color-azul);
@@ -101,17 +130,17 @@ footer{
     color: var(--color-blanco);
 }
 .foot__logo{
-    width: 200px;
+    width: 150px;
 }
 .foot__author{
     padding: 10px;
     width: 60%;
 }
 .foot__socialNetworks img{
-    width: 35px;
+    width: 30px;
 }
 .foot__socialNetworks ul li{
-    margin: 10px;
+    margin: 5px;
     border: 2px solid ;
     border-radius: 50%;
     display: inline-block;
@@ -125,7 +154,7 @@ footer{
 }
 header nav img{
     width: auto;
-    height: 40px;
+    height: 50px;
     margin: 3px;
 }
 .entrada {
@@ -136,7 +165,14 @@ header nav img{
 }
 .seconds__field{
     width: 100%;
-    height: 200px;
+    height: 250px;
+}
+.textResult{
+    width: 100%;
+    height: 170px;
+    max-height: 400px;
+    overflow-y: auto;
+    word-wrap: break-word;
 }
 .incoming__text{
     width: 100%;
