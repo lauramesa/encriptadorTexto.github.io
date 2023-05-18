@@ -46,10 +46,13 @@ header nav img{
     margin-bottom: 15x;
     height: 520px;
 }
+.first__field{
+    width: 70%;
+}
 .seconds__field{
     z-index: 1;
     position: relative;
-    width: 100%;
+    width: 30%;
     min-width: 300px;
     background-color: var(--color-blanco);
     color: var(--color-azul);
@@ -64,11 +67,23 @@ header nav img{
 
 .textResult{
     margin: 5px;
-    width: 100%;
+    width: auto;
     height: 400px;
     max-height: 400px;
     overflow-y: auto;
     word-wrap: break-word;
+}
+.textResult span{
+    position: absolute;
+    right: 0;
+    background: var(--color-blanco);
+    /*border-left: 2px solid var(--color-azul);*/
+    animation: escribir 5s steps(30) alternate;
+}
+
+@keyframes escribir{
+    from{width: 100%;}
+    to {width: 0;}
 }
 .textResult::selection{
     color: var(--color-blanco);
@@ -98,7 +113,7 @@ header nav img{
 .incoming__text{
     color: var(--color-azul);
     background-color: var(--color-cielo);
-    width: 65vw;
+    width: 100%;
     height: 95%;
     max-width: 850px;
     min-width: 400px;
