@@ -11,10 +11,10 @@
     <link rel="icon" href="./public/img/logo.ico">
     <link rel="stylesheet" href="./public/css/index.css">
     <link rel="stylesheet" href="./public/css/normalize.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Encriptador</title>
 </head>
 <body>
+    <div class="show_background"></div>
     <header class="home__page">
         <nav class="nav container">
             <img src="./public/img/logoChallege.png" alt="desafio alura">
@@ -23,13 +23,21 @@
     <main class="main__page container">
         <article class="first__field">
             <textarea class="incoming__text" name="entrada" id="" cols="30" rows="10" placeholder="Ingresa texto aquí..."></textarea>
-            <button class="buttons encrypt" onclick="encriptar()">Encriptar</button>
-            <button class="buttons decrypt" onclick="descifrar()">Desencriptar</button>
-            <button class="buttons reset" onclick="resetear()">Resetear</button>
+            <button id="1" class="buttons encrypt" onclick="encriptar()">Encriptar</button>
+            <button id="2" class="buttons decrypt" onclick="descifrar()">Desencriptar</button>
+            <button id="3" class="buttons reset" onclick="resetear()">Resetear</button>
         </article>
         <article class="seconds__field">
-            <p class="textResult">Ningun mensaje fue encontrado...<span>&#160</span></p>
-            <button class="buttons copyText" onclick="copiarTexto()">copiar</button>
+            <p class="textResult">Ningun mensaje fue encontrado...<span>&#160;</span></p>
+            <button id="4" class="buttons copyText" onclick="copiarTexto()">copiar</button>
+        </article>
+        <article class="show">
+            <div class="show__state">
+                <h2>felicidades</h2>
+            </div>
+            <p class="show__action">el texto se a modificado correctamente</p>
+            <hr>
+            <button id="5" class="buttons show__btn" onclick="ocultarMensaje()">cerrar</button>
         </article>
     </main>
     <footer>
@@ -37,7 +45,7 @@
             <article>
                 <p>Desarrollado por:</p>
             </article>
-            <img class="foot__logo" src="./public/img/marcaLogo.png">
+            <img class="foot__logo" src="./public/img/marcaPersonal3.png">
             <article class="foot__socialNetworks">
                 <ul>
                     <li>
@@ -60,5 +68,7 @@
     <script src="./public/script/encriptar.js"></script>
     <script src="./public/script/desencriptar.js"></script>
     <script src="./public/script/copiarTexto.js"></script>
+    <script src="./public/script/resetear.js"></script>
+    <script src="./public/script/mensajeAccion.js"></script>
 </body>
 </html>
