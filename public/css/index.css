@@ -36,6 +36,15 @@ header nav img{
     height: 55px;
     margin: 5px;
 }
+.ff{
+    position:absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5f7;
+    opacity: 0.1;
+    background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -25px 0/ 50px 50px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -25px 0/ 50px 50px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 50px 50px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 50px 50px;
+}
 .main__page {
     display: flex;
     justify-content: space-evenly;
@@ -43,16 +52,20 @@ header nav img{
 }
 .first__field, .seconds__field{
     margin-top: 50px;
+    margin-left: 15px;
     margin-bottom: 15x;
     height: 520px;
 }
 .first__field{
     width: 70%;
+    height: 100%;
 }
 .seconds__field{
     z-index: 1;
     position: relative;
     width: 30%;
+    height: 500px;
+    min-height: 250px;
     min-width: 300px;
     background-color: var(--color-blanco);
     color: var(--color-azul);
@@ -64,7 +77,20 @@ header nav img{
     font-size: 18px;
     line-height:  1.4;
 }
-
+.info{
+    width: 100%;
+    height: 30px;
+}
+.info img{
+    position: relative;
+    width: 20px;
+    
+}
+.info p{
+    margin-left: 20px;
+    align-content: center;
+    display: inline-block;
+}
 .textResult{
     margin: 5px;
     width: auto;
@@ -117,11 +143,13 @@ header nav img{
 }
 .incoming__text{
     color: var(--color-azul);
+    opacity: 0.7;
     background-color: var(--color-cielo);
     width: 100%;
-    height: 95%;
+    height: 430px;
+    margin-bottom: 5px;
     max-width: 850px;
-    min-width: 400px;
+    min-width: 380px;
     padding: 1em;
     border-radius: 15px;
     border: 1px solid transparent;
@@ -174,6 +202,10 @@ header nav img{
     color: var(--color-blanco);
     background-color: var(--color-azul);
 }
+.show__well{
+    width: 70px;
+    margin: 15px;
+}
 .show__action{
     height: 70px;
     padding: 20px;
@@ -186,7 +218,7 @@ header nav img{
     background-color: var(--color-azul);
 }
 .show__btn:hover{
-    background-color: #1b665a;
+    background-color: #2862a9;
 }
 footer{
     width: 100%;
@@ -248,6 +280,7 @@ header nav img{
     height: auto;
 }
 .seconds__field{
+    opacity: 0.7;
     width: 100%;
     height: 250px;
 }

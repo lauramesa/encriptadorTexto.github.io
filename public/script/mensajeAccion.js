@@ -1,3 +1,17 @@
+function ocultarAlerta() {
+  fondo.style.display = "none";
+  mensaje.style.display = "none";
+}
+
+function notificacion(){
+  let audio = new Audio('./public/img/correct.mp3');
+  audio.play();
+}
+function notificacionErr(){
+  let audio = new Audio('./public/img/error.mp3');
+  audio.play();
+}
+
 /*
 const encriptar1 = document.getElementById("1");
 const desencriptar2 = document.getElementById("2");

@@ -2,13 +2,18 @@ function descifrar(){
     var texto = document.querySelector('.incoming__text').value;
 
     if(validarTexto(texto) == true){
+        notificacionErr();
         return mostrarMensaje("No has ingresado ningun texto!");
     }else if(validarCaracteresEspeciales(texto) == true){
+        notificacionErr();
         return mostrarMensaje("No se permiten caracteres especiales tales como las tildes");
     }else if(validarMayusculas(texto) == true){
+        notificacionErr();
         return mostrarMensaje("No se permiten letras en mayuscula");
     }
     else{
+        notificacion();
+        mostrar();
         desencriptar(texto);
     }
 }

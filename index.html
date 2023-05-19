@@ -14,6 +14,7 @@
     <title>Encriptador</title>
 </head>
 <body>
+    <div class="ff"></div>
     <div class="show_background"></div>
     <header class="home__page">
         <nav class="nav container">
@@ -23,6 +24,9 @@
     <main class="main__page container">
         <article class="first__field">
             <textarea class="incoming__text" name="entrada" id="" cols="30" rows="10" placeholder="Ingresa texto aquí..."></textarea>
+            <div class="info">
+                <img src="./public/img/info.png" alt="informacion"><p>Solo letras minusculas y sin acento</p>
+            </div>
             <button id="1" class="buttons encrypt" onclick="encriptar()">Encriptar</button>
             <button id="2" class="buttons decrypt" onclick="descifrar()">Desencriptar</button>
             <button id="3" class="buttons reset" onclick="resetear()">Resetear</button>
@@ -35,9 +39,10 @@
             <div class="show__state">
                 <h2>felicidades</h2>
             </div>
+            <img class="show__well" src="./public/img/comprobado.png" alt="">
             <p class="show__action">el texto se a modificado correctamente</p>
             <hr>
-            <button id="5" class="buttons show__btn" onclick="ocultarMensaje()">cerrar</button>
+            <button id="5" class="buttons show__btn" onclick="ocultarAlerta()">ok</button>
         </article>
     </main>
     <footer>
