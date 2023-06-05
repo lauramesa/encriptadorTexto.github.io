@@ -1,3 +1,6 @@
+const btn__decrypt = document.querySelector('.decrypt');
+btn__decrypt.addEventListener('click', descifrar);
+
 function descifrar(){
     var texto = document.querySelector('.incoming__text').value;
 

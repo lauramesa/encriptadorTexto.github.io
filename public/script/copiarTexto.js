@@ -1,3 +1,6 @@
+const btn__copyText = document.querySelector('.copyText');
+btn__copyText.addEventListener('click', copiarTexto);
+
 function copiarTexto(){
     notificacion();
     mostrarAlerta();

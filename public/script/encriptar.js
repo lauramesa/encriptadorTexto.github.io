@@ -1,3 +1,6 @@
+const btn__encrypt = document.querySelector('.encrypt');
+btn__encrypt.addEventListener('click', encriptar);
+
 function encriptar(){
     var texto = document.querySelector('.incoming__text').value;
 
