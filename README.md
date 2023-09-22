@@ -25,6 +25,3 @@
 - `public/scripts/copiarTexto.js`: Archivo JavaScript que contiene la lógica del boton para copiar el texto generado.
 - `public/scripts/resetear.js`: Archivo JavaScript que contiene la lógica para eliminar cualquier texto entrante o generado.
 - `public/scripts/mensajeAccion.js`: Archivo que oculta mensaje emergente.
-
-## Contacto
-Si tienes alguna pregunta o sugerencia, puedes contactarme a través de mi correo electrónico [lauramesa404@gmail.com](mailto:lauramesa404@gmail.com)
